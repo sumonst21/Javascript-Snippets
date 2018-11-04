@@ -25,3 +25,12 @@ $("button[data-eid='hosting.myh.cpanel.account.header.cpanel_admin.click']")
     -webkit-transform: translateY(0)!important;
     transform: translateY(0)!important;
 }
+
+
+// auto slide
+jQuery(function ($) {
+    function TestimonialInterval() {
+        $(".testimonial-slider-container .slick-next").trigger("click");
+    }
+    setInterval(TestimonialInterval, 3000);
+});
